@@ -20,16 +20,18 @@ if ($continue) {
     $userPhone = $_POST['userPhone'];
     $userMessage = $_POST['userMessage'];
 
-    $to = "patres15999@gmail.com";
-    $subject = '/';
+    $to = "komu@example.com";
+    $subject = 'napis si sem predmet e-mailu';
     $message = '<html><body>';
     $message .= '<p>Meno: ' . $userName . '</p>';
     $message .= '<p>E-mail: ' . $userEmail . '</p>';
+    // dopln userPhone
+    // dopln userMessage
     $message .= '</body></html>';
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= 'From: <' . "example@example.com" . '>' . "\r\n";
+    $headers .= 'From: <' . "semzmenemail@example.com" . '>' . "\r\n";
     $headers .= 'Reply-To: ' . $userEmail . "\r\n";
     $headers .= 'X-Mailer: PHP/' . phpversion();
 
